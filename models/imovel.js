@@ -17,6 +17,10 @@ const ImovelSchema = new mongoose.Schema({
     numBanheiro: Number,
     urlImagens: [String],
     area: Number,
+    destaque: {
+        type: Boolean,
+        default: false
+    },
     createdAt: {
         type: Date,
         default: Date.now
